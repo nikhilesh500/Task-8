@@ -3,7 +3,7 @@
     <header class="shadow-sm bg-white" >
       <nav class="container mx-auto p-4 flex justify-between">
         <NuxtLink to="/products" class="font-bold" >Products</NuxtLink>
-        
+        <NuxtLink to="/products/cart">Cart ({{cart.length}})</NuxtLink>
       </nav>
     </header>
     
@@ -22,10 +22,11 @@
 </template>
 
 <script setup>
+const cart = useCart();
 </script>
 
 <style>
   .router-link-exact-active {
-    color: hsla(160, 100%, 37%, 1);
+    color: #fb923c;
   }
 </style>

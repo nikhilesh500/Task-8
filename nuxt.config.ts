@@ -7,5 +7,16 @@ export default defineNuxtConfig({
   tailwindcss: {
     exposeConfig: true,
     viewer: true,
-  }
+  },
+  app: {
+    head: {
+      title: 'Story',
+      meta: [
+        { name: 'description', content: 'Everything About Nuxt 3'}
+      ],
+      link: [
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
+      ]
+    }
+  },
 })
